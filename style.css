@@ -1,1 +1,118 @@
+:root {
+  --Pale-blue: hsl(225, 100%, 94%);
+  --Bright-blue: hsl(245, 75%, 52%);
+  --Very-pale-blue: hsl(225, 100%, 98%);
+  --Desaturated-blue: hsl(224, 23%, 55%);
+  --Dark-blue: hsl(223, 47%, 23%);
+}
 
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--Pale-blue);
+  background-image: url(images/pattern-background-mobile.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  font-family: "Red Hat Display", sans-serif;
+  font-size: 0.8rem;
+  color: var(--Desaturated-blue);
+  line-height: 1.6em;
+  padding: 5em 2em;
+}
+
+h2 {
+  color: #000;
+  margin-top: 0;
+}
+
+.plan .plan-type {
+  color: #000;
+  font-weight: 700;
+}
+
+.container {
+  background-color: var(--Very-pale-blue);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  border-radius: 25px;
+  overflow: hidden;
+  box-shadow: 0px 29px 57px 0px rgba(0, 0, 0, 0.39);
+  -webkit-box-shadow: 0px 29px 57px 0px rgba(0, 0, 0, 0.39);
+  -moz-box-shadow: 0px 29px 57px 0px rgba(0, 0, 0, 0.39);
+}
+
+.hero {
+  width: 100%;
+}
+
+.content {
+  margin: 2.5em 0;
+  padding: 0 2em;
+}
+
+.description {
+  font-size: 0.9rem;
+  letter-spacing: 0.05em;
+  line-height: 1.6em;
+  padding: 0 0.5em;
+}
+
+.subscription {
+  background-color: hsl(302, 11%, 95%);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 2em 0;
+  padding: 1.5em;
+  border-radius: 15px;
+}
+
+.subscription a {
+  font-weight: 700;
+}
+
+.plan {
+  display: flex;
+  flex-direction: column;
+}
+
+.plan p {
+  margin: 0;
+}
+
+.button {
+  display: block;
+  color: var(--Very-pale-blue);
+  background-color: var(--Bright-blue);
+  text-decoration: none;
+  font-weight: 700;
+  letter-spacing: 1px;
+  padding: 1em;
+  border-radius: 10px;
+  margin-bottom: 2em;
+  box-shadow: 0px 11px 57px 0px rgba(0, 0, 0, 0.39);
+  -webkit-box-shadow: 0px 11px 57px 0px rgba(0, 0, 0, 0.39);
+  -moz-box-shadow: 0px 11px 57px 0px rgba(0, 0, 0, 0.39);
+}
+
+a.cancel {
+  color: var(--Desaturated-blue);
+  text-decoration: none;
+  font-size: 0.9rem;
+  font-weight: 700;
+}
+
+@media (min-width: 768px) {
+  body {
+    background-image: url(images/pattern-background-desktop.svg);
+  }
+}

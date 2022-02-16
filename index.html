@@ -4,6 +4,12 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- displays site properly based on user's device -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap"
+      rel="stylesheet"
+    />
 
     <link
       rel="icon"
@@ -18,24 +24,31 @@
   </head>
   <body>
     <div class="container">
-      <img src="images/illustration-hero.svg" alt="Dancing woman animation" />
-      <div class="description">
-        <h1>Order Summary</h1>
-        <p>
-          You can now listen to millions of songs, audiobooks, and podcasts on
-          any device anywhere you like!
-        </p>
-      </div>
-      <div class="subscription">
-        <img src="images/icon-music.svg" alt="Music Icon" />
-        <div class="plan">
-          <p>Annual Plan</p>
-          <p>$59.99/year</p>
+      <img
+        class="hero"
+        src="images/illustration-hero.svg"
+        alt="Dancing woman animation"
+      />
+
+      <div class="content">
+        <div class="description">
+          <h2>Order Summary</h2>
+          <p>
+            You can now listen to millions of songs, audiobooks, and podcasts on
+            any device anywhere you like!
+          </p>
         </div>
-        <a href="#">Change</a>
+        <div class="subscription">
+          <img src="images/icon-music.svg" alt="Music Icon" />
+          <div class="plan">
+            <p class="plan-type">Annual Plan</p>
+            <p>$59.99/year</p>
+          </div>
+          <a href="#">Change</a>
+        </div>
+        <a href="#" class="button">Proceed to Payment</a>
+        <a class="cancel" href="#">Cancel Order</a>
       </div>
-      <button>Proceed to Payment</button>
-      <a href="#">Cancel Order</a>
     </div>
   </body>
 </html>
